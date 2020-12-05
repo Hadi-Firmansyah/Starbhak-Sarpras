@@ -60,6 +60,7 @@
                 <p>Sarana dan prasarana merupakan suatu alat atau bagian yang memiliki peran sangat penting bagi
                     keberhasilan dan kelancaran suatu proses, termasuk juga dalam lingkup pendidikan..</p>
                 <a class="cta-btn" href="/pinjamBarang" >Pinjam Barang</a>
+                <a class="cta-btn" href="/pengembalianBarang" >Pengembalian Barang</a>
             </div>
 
         </div>

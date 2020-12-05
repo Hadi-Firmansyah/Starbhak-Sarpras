@@ -17,13 +17,15 @@ Route::get('/', function () {
     return view('home/home');
 });
 
-Route::get('/pinjamBarang', 'PeminjamanController@index');
-
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
 
+Route::get('/pinjamBarang', 'PeminjamanController@index');
+Route::get('/pengembalianBarang', 'PengembalianController@index');
+
 Route::post('/pinjamBarang', 'PeminjamanController@pinjam')->name('action');
+Route::post('/pengembalianBarang', 'PengembalianController@pengembalian')->name('action');
 
 Route::get('/cetak_pdf/barangs', 'BarangController@cetak_pdf');
 Route::get('/export_excel/barangs', 'BarangController@export_excel');
